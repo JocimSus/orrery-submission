@@ -17,40 +17,6 @@ canvas {
   z-index: 1;
 }
 
-.navbar {
-  color:white;
-  width:100vw;
-  height:10vh;
-  background: radial-gradient(ellipse at top, #5a5a5a3f, transparent),
-            radial-gradient(ellipse at bottom, #00000000, transparent);
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  pointer-events:all;
-}
-
-.navbutton {
-  color: rgba(255, 255, 255, 0.262);
-  font-family: SpaceMono;
-  font-size:15px;
-  background-color: rgb(0,0,0,0);
-  border: none;
-  width:auto;
-  height:auto;
-  transition: all 0.5s;
-}
-
-.navbutton:hover {
-  color: white;
-  font-size:20px;
-  background-color: rgb(0,0,0,0);
-  border: none;
-  width:auto;
-  height:auto;
-  border-bottom: solid rgb(0, 157, 255) 2px;
-}
-
 .PlanetLabels {
   transition: opacity 0.5s;
 }
