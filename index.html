@@ -22,8 +22,9 @@
     </div>
     <div class="container">
       <div class="SLIDA">
-        <div class="slider-value" id="sliderValue">5000</div>
-        <input type="range" id="SLIDA" class="slider" min="0" max="100000" value="5000" step="1" oninput="updateValue(this.value)">
+        <input type="number" id="sliderValue" min="0" step="0.1" value="1" onchange="changeSpeed(this.value)" style="max-width: 60px;">
+        <label for="sliderValue" style="color:white; margin-left:10px"> days / second</label>
+        <input type="range" id="SLIDA" class="slider" min="0" max="3650" value="1" step="0.1" oninput="changeSpeed(this.value)">
         <output for="mySlider" id="volumeOutput"></output>
       </div>
     </div>
