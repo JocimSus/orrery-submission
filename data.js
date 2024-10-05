@@ -272,7 +272,7 @@ const nearEarthObjects = {
         oE: 0.5328,
         color: 0xa9a9a9,
         rotationPeriod: 10.297,
-        period: 4.35,
+        period: 1587.75,
         inclination: 26.69,
         nextcloseapproach: "2024-Oct-13 01:56 ± < 00:01, 0.37410 AU",
         closestapproach: "2011-Oct-13 00:04 ± < 00:01, 0.35910 AU",
@@ -281,22 +281,22 @@ const nearEarthObjects = {
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null
     },
-    "3552 Don Quixote": {
-        tag: "3552 Don Quixote",
-        size: 19 * nEOScale,
-        smA: 4.267 * distanceScaleFactor,
-        oE: 0.7073,
-        color: 0xa9a9a9,
-        rotationPeriod: 6.665,
-        period: 8.81,  
-        inclination: 31.06,
-        nextcloseapproach: "2053-Aug-26 04:18 ± < 00:01, 0.44935 AU",
-        closestapproach: "1922-Sep-01 23:06 ± < 00:01, 0.30002 AU",
-        classification: "Amor",
-        desc: "Don Quixote is a large, elongated asteroid classified as a near-Earth object in the Amor group. It was discovered in 1983 and is thought to have originated from the Kuiper Belt. With an eccentric orbit, it is considered a Damocloid-type asteroid.",
-        center: new THREE.Vector3(0, 0, 0),
-        texturePath: null
-    },
+    // "3552 Don Quixote": {
+    //     tag: "3552 Don Quixote",
+    //     size: 19 * nEOScale,
+    //     smA: 4.267 * distanceScaleFactor,
+    //     oE: 0.7073,
+    //     color: 0xa9a9a9,
+    //     rotationPeriod: 6.665,
+    //     period: 8.81,  
+    //     inclination: 31.06,
+    //     nextcloseapproach: "2053-Aug-26 04:18 ± < 00:01, 0.44935 AU",
+    //     closestapproach: "1922-Sep-01 23:06 ± < 00:01, 0.30002 AU",
+    //     classification: "Amor",
+    //     desc: "Don Quixote is a large, elongated asteroid classified as a near-Earth object in the Amor group. It was discovered in 1983 and is thought to have originated from the Kuiper Belt. With an eccentric orbit, it is considered a Damocloid-type asteroid.",
+    //     center: new THREE.Vector3(0, 0, 0),
+    //     texturePath: null
+    // },
     "433 Eros": {
         tag: "433 Eros",
         size: 16.84 * nEOScale,
@@ -304,7 +304,7 @@ const nearEarthObjects = {
         oE: 0.2227,
         color: 0xa9a9a9,
         rotationPeriod: 5.27,
-        period: 1.76, 
+        period: 642.4, 
         inclination: 10.83,
         nextcloseapproach: "2025-Nov-30 02:18 ± < 00:01, 0.39765 AU",
         closestapproach: "2137-Jan-25 14:12 ± < 00:01, 0.14946 AU",
@@ -320,7 +320,7 @@ const nearEarthObjects = {
         oE: 0.4494,
         color: 0xa9a9a9,
         rotationPeriod: 12.056,
-        period: 2.83, 
+        period: 1032.95, 
         inclination: 17.43,
         nextcloseapproach: "2024-Oct-11 05:00 ± < 00:01, 0.24254 AU",
         closestapproach: "2058-Oct-11 08:27 ± < 00:01, 0.20665 AU",
@@ -337,7 +337,7 @@ const nearEarthObjects = {
         oE: 0.397,
         color: 0xa9a9a9,
         rotationPeriod: 4.795,
-        period: 2.54, 
+        period: 927.1, 
         inclination: 8.45,
         nextcloseapproach: "2041-Jun-29 06:58 ± < 00:01, 0.43530 AU",
         closestapproach: "2074-Aug-03 16:48 ± < 00:01, 0.14074 AU",
@@ -350,56 +350,56 @@ const nearEarthObjects = {
 }
 
 const nearearthcomets = {
-    "109P/Swift-Tuttle": {
-        tag: "109P/Swift-Tuttle",
-        size: 26 * nEOScale,
-        smA: 26.0920694978266 * distanceScaleFactor,
-        oE: 0.963225755,
-        color: 0xa9a9a9,
-        rotationPeriod: null, // Not specified
-        period: 133.28, 
-        inclination: 113.453817,
-        nextcloseapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
-        closestapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
-        classification: "Halley-type Comet [NEO]",
-        desc: "Comet Swift-Tuttle was discovered in 1862 independently by Lewis Swift and Horace Tuttle. It takes 133 years to orbit the Sun once. Swift-Tuttle last reached perihelion in 1992 and will return again in 2125. It is a large comet with a nucleus 16 miles across. The Perseids meteor shower originates from Swift-Tuttle’s debris.",
-        center: new THREE.Vector3(0, 0, 0),
-        texturePath: null
-    },
+    // "109P/Swift-Tuttle": {
+    //     tag: "109P/Swift-Tuttle",
+    //     size: 26 * nEOScale,
+    //     smA: 26.0920694978266 * distanceScaleFactor,
+    //     oE: 0.963225755,
+    //     color: 0xa9a9a9,
+    //     rotationPeriod: null, // Not specified
+    //     period: 133.28, 
+    //     inclination: 113.453817,
+    //     nextcloseapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
+    //     closestapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
+    //     classification: "Halley-type Comet [NEO]",
+    //     desc: "Comet Swift-Tuttle was discovered in 1862 independently by Lewis Swift and Horace Tuttle. It takes 133 years to orbit the Sun once. Swift-Tuttle last reached perihelion in 1992 and will return again in 2125. It is a large comet with a nucleus 16 miles across. The Perseids meteor shower originates from Swift-Tuttle’s debris.",
+    //     center: new THREE.Vector3(0, 0, 0),
+    //     texturePath: null
+    // },
 
-    "1P/Halley": {
-        tag: "1P/Halley",
-        size: 11 * nEOScale,
-        smA: 17.93003431157555 * distanceScaleFactor,
-        oE: 0.9671429085,
-        color: 0xa9a9a9,
-        rotationPeriod: null, // Not specified
-        period: 75.32, 
-        inclination: 162.2626906,
-        nextcloseapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
-        closestapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
-        classification: "Halley-type Comet [NEO]",
-        desc: "Halley's Comet is one of the most famous comets, returning to Earth's vicinity every 75 years. It was last here in 1986 and will return in 2061. Named after Edmond Halley, who predicted its return in 1758, it is the source of several historic sightings, making it a significant part of astronomical history.",
-        center: new THREE.Vector3(0, 0, 0),
-        texturePath: null
-    },
+    // "1P/Halley": {
+    //     tag: "1P/Halley",
+    //     size: 11 * nEOScale,
+    //     smA: 17.93003431157555 * distanceScaleFactor,
+    //     oE: 0.9671429085,
+    //     color: 0xa9a9a9,
+    //     rotationPeriod: null, // Not specified
+    //     period: 75.32, 
+    //     inclination: 162.2626906,
+    //     nextcloseapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
+    //     closestapproach: "2126-Aug-05 15:50 ± 00:01, 0.15337 AU",
+    //     classification: "Halley-type Comet [NEO]",
+    //     desc: "Halley's Comet is one of the most famous comets, returning to Earth's vicinity every 75 years. It was last here in 1986 and will return in 2061. Named after Edmond Halley, who predicted its return in 1758, it is the source of several historic sightings, making it a significant part of astronomical history.",
+    //     center: new THREE.Vector3(0, 0, 0),
+    //     texturePath: null
+    // },
 
-    "2P/Encke": {
-        tag: "2P/Encke",
-        size: 6.4 * nEOScale,
-        smA: 2.219588160856368 * distanceScaleFactor,
-        oE: 0.8482682514,
-        color: 0xa9a9a9,
-        rotationPeriod: null, // Not specified
-        period: 3.3, 
-        inclination: 11.77999525,
-        nextcloseapproach: "2030-Jul-11 13:31 ± 00:18, 0.27442 AU",
-        closestapproach: "2172-Jun-30 15:10 ± 1_19:51, 0.15839 AU",
-        classification: "Encke-type Comet [NEO]",
-        desc: "Discovered by Pierre F. A. Mechain in 1786, comet Encke was identified as the same comet by Johann Franz Encke. It has the shortest known orbital period, 3.30 years, and a small nucleus of about 2.98 miles in diameter. It is the parent of the Taurid meteor shower, famous for its fireballs during October/November.",
-        center: new THREE.Vector3(0, 0, 0),
-        texturePath: null
-    },
+    // "2P/Encke": {
+    //     tag: "2P/Encke",
+    //     size: 6.4 * nEOScale,
+    //     smA: 2.219588160856368 * distanceScaleFactor,
+    //     oE: 0.8482682514,
+    //     color: 0xa9a9a9,
+    //     rotationPeriod: null, // Not specified
+    //     period: 3.3, 
+    //     inclination: 11.77999525,
+    //     nextcloseapproach: "2030-Jul-11 13:31 ± 00:18, 0.27442 AU",
+    //     closestapproach: "2172-Jun-30 15:10 ± 1_19:51, 0.15839 AU",
+    //     classification: "Encke-type Comet [NEO]",
+    //     desc: "Discovered by Pierre F. A. Mechain in 1786, comet Encke was identified as the same comet by Johann Franz Encke. It has the shortest known orbital period, 3.30 years, and a small nucleus of about 2.98 miles in diameter. It is the parent of the Taurid meteor shower, famous for its fireballs during October/November.",
+    //     center: new THREE.Vector3(0, 0, 0),
+    //     texturePath: null
+    // },
 
     "67P/Churyumov-Gerasimenko": {
         tag: "67P/Churyumov-Gerasimenko",
@@ -418,22 +418,22 @@ const nearearthcomets = {
         texturePath: null
     },
 
-    "8P/Tuttle": {
-        tag: "8P/Tuttle",
-        size: 4.8 * nEOScale,
-        smA: 5.700291361749948 * distanceScaleFactor,
-        oE: 0.819799747,
-        color: 0xa9a9a9,
-        rotationPeriod: null, // Not specified
-        period: 13.61, 
-        inclination: 54.98318484,
-        nextcloseapproach: "2034-Nov-28 23:42 ± 00:01, 0.45165 AU",
-        closestapproach: "1982-Nov-27 14:19 ± 00:01, 0.39091 AU",
-        classification: "Jupiter-family Comet [NEO]",
-        desc: "A mid-sized comet discovered independently by multiple astronomers, its orbit is influenced by Jupiter's gravity. It orbits the sun every 13.61 years and has been classified as a 'Near Earth Asteroid' due to its proximity. At around 4.5 kilometers in diameter, it is larger than most asteroids.",
-        center: new THREE.Vector3(0, 0, 0),
-        texturePath: null
-    },
+    // "8P/Tuttle": {
+    //     tag: "8P/Tuttle",
+    //     size: 4.8 * nEOScale,
+    //     smA: 5.700291361749948 * distanceScaleFactor,
+    //     oE: 0.819799747,
+    //     color: 0xa9a9a9,
+    //     rotationPeriod: null, // Not specified
+    //     period: 13.61, 
+    //     inclination: 54.98318484,
+    //     nextcloseapproach: "2034-Nov-28 23:42 ± 00:01, 0.45165 AU",
+    //     closestapproach: "1982-Nov-27 14:19 ± 00:01, 0.39091 AU",
+    //     classification: "Jupiter-family Comet [NEO]",
+    //     desc: "A mid-sized comet discovered independently by multiple astronomers, its orbit is influenced by Jupiter's gravity. It orbits the sun every 13.61 years and has been classified as a 'Near Earth Asteroid' due to its proximity. At around 4.5 kilometers in diameter, it is larger than most asteroids.",
+    //     center: new THREE.Vector3(0, 0, 0),
+    //     texturePath: null
+    // },
 }
 
 export {planetParams, satelliteParams, nearEarthObjects, nearearthcomets}
