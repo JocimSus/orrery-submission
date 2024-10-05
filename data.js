@@ -14,7 +14,8 @@ const planetParams = {
         rotationPeriod: 58.666667, 
         period: 87.9090455, 
         inclination: 7.0, 
-        texturePath: "/textures/8k_mercury.jpg" 
+        texturePath: "/textures/8k_mercury.jpg",
+        desc: "Mercury, the smallest planet in our solar system and the closest to the Sun, has no atmosphere, making it a world of extreme temperature fluctuations. It is a rocky planet with a heavily cratered surface, similar to Earth’s Moon."
     },
     venus: { 
         tag:"venus", 
@@ -25,7 +26,8 @@ const planetParams = {
         rotationPeriod: 243.0180556, 
         period: 224.5469999, 
         inclination: 3.4, 
-        texturePath: "/textures/8k_venus_surface.jpg" 
+        texturePath: "/textures/8k_venus_surface.jpg",
+        desc: "Venus, the second planet from the Sun, is similar in size and structure to Earth but has a thick, toxic atmosphere and surface temperatures hot enough to melt lead. Its runaway greenhouse effect makes it the hottest planet in our solar system."
     },
     earth: { 
         tag:"earth", 
@@ -36,7 +38,8 @@ const planetParams = {
         rotationPeriod: 0.97430521666, 
         period: 365.006351, 
         inclination: 0.0, 
-        texturePath: "/textures/earth.jpg" 
+        texturePath: "/textures/earth.jpg",
+        desc: "Earth, the third planet from the Sun and the only known world to support life, has a rich diversity of ecosystems and a unique atmosphere that sustains liquid water. It's the fifth largest planet and features a surface covered by oceans, landmasses, and polar ice caps."
     },
     mars: { 
         tag:"mars", 
@@ -47,7 +50,8 @@ const planetParams = {
         rotationPeriod: 1.025, 
         period: 686.509374, 
         inclination: 1.85, 
-        texturePath: "/textures/8k_mars.jpg"  
+        texturePath: "/textures/8k_mars.jpg",
+        desc: "Mars, the fourth planet from the Sun, is a cold desert world with a thin atmosphere. It is known for its red color, caused by iron oxide (rust) on its surface. Scientists believe Mars once had liquid water, making it a key focus in the search for signs of past life."
     },
     jupiter: { 
         tag:"jupiter", 
@@ -58,7 +62,8 @@ const planetParams = {
         rotationPeriod: 0.4131944, 
         period: 4329.854475, 
         inclination: 1.3, 
-        texturePath: "/textures/8k_jupiter.jpg"  
+        texturePath: "/textures/8k_jupiter.jpg",
+        desc: "Jupiter, the fifth planet from the Sun and the largest in our solar system, is a gas giant with no solid surface. It is famous for its swirling clouds and the Great Red Spot, a giant storm that has raged for centuries."
     },
     saturn: { 
         tag:"saturn", 
@@ -69,7 +74,8 @@ const planetParams = {
         rotationPeriod: 0.4395837, 
         period: 10748.33677, 
         inclination: 2.5, 
-        texturePath: "/textures/saturnmap.jpg"  
+        texturePath: "/textures/saturnmap.jpg",
+        desc: "Saturn, the sixth planet from the Sun, is known for its stunning ring system made of ice and rock. Like Jupiter, Saturn is a gas giant composed mostly of hydrogen and helium, and it is the second largest planet in the solar system."
     },
     uranus: { 
         tag:"uranus", 
@@ -80,7 +86,8 @@ const planetParams = {
         rotationPeriod: 0.71805522, 
         period: 30666.14879, 
         inclination: 0.77, 
-        texturePath: "/textures/uranusmap.jpg" 
+        texturePath: "/textures/uranusmap.jpg",
+        desc: "Uranus, the seventh planet from the Sun, is unique for its tilted axis, causing extreme seasons. It is an ice giant with a blue-green color due to methane in its atmosphere, and it has faint rings and a cold, windy atmosphere."
     },
     neptune: { 
         tag:"neptune", 
@@ -91,7 +98,8 @@ const planetParams = {
         rotationPeriod: 0.666667, 
         period: 60148.8318, 
         inclination: 1.77, 
-        texturePath: "/textures/neptunemap.jpg"  
+        texturePath: "/textures/neptunemap.jpg",
+        desc: "Neptune, the eighth and farthest known planet from the Sun, is a dark, cold ice giant. Its blue color comes from the methane in its atmosphere. Known for its intense storms and high winds, Neptune is the windiest planet in our solar system."
     },
 }
 
