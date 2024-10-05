@@ -303,18 +303,22 @@ var selected  = false
 document.addEventListener('mousemove', onHover) //trigger a function upon the mouse being clicked
 document.addEventListener('mousedown', onClick)
 
+const info_bar = document.querySelector(".information")
+
 function onClick(event) {
   if (event.button === 2) {
     if (selected === true) {
       savedObject.material.color = savedColor
       selected = false
     }
+    info_bar.classList.remove("visible")
   }
   if (event.button === 0) {
     if (savedObject) {
       selected = true
-      var color = new THREE.Color(1, 1, 1)
+      var color = new THREE.Color(0, 5, 0)
       savedObject.material.color  = color
+      info_bar.classList.add("visible")
     }
     else {
       return
