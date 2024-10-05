@@ -316,7 +316,7 @@ function onClick(event) {
   if (event.button === 0) {
     if (savedObject) {
       selected = true
-      var color = new THREE.Color(0, 5, 0)
+      var color = new THREE.Color(1, 1, 1)
       savedObject.material.color  = color
       info_bar.classList.add("visible")
     }
