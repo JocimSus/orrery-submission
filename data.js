@@ -129,7 +129,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 0.3180258333, 
         period: 474.5, 
-        inclination: 5.87, 
+        inclination: 5.87,
+        desc: "Ryugu is a near-Earth object and potentially hazardous asteroid (PHA) in the Apollo group, about 1 km in diameter. It is a dark Cg-type asteroid with features of both C-type and G-type asteroids. Discovered by the Lincoln Near-Earth Asteroid Research (LINEAR) team in 1999, Ryugu was visited by JAXA's Hayabusa 2 spacecraft in June 2018 to collect surface samples.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -141,7 +142,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 5.9875, 
         period: 1638.85, 
-        inclination: 13.84, 
+        inclination: 13.84,
+        desc: "53319 is the largest known potentially hazardous asteroid, with a diameter of approximately 7 km. Discovered by the (LINEAR) team in 1999, 53319 is a slow-rotating asteroid classified as an NEO and PHA within the Apollo group.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -153,7 +155,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 0.1489, 
         period: 1551.25, 
-        inclination: 2.8, 
+        inclination: 2.8,
+        desc: "Wilson-Harrington is both a near-Earth asteroid and potentially hazardous asteroid, as well as a comet (107P/Wilson-Harrington). It was first discovered as a comet in 1949 by Albert Wilson and Robert Harrington. It showed cometary activity only once, later being rediscovered in 1979 as an asteroid by Eleanor Helin.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -165,7 +168,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 0.2175, 
         period: 865.05, 
-        inclination: 39.82, 
+        inclination: 39.82,
+        desc: "Midas is a near-Earth object and PHA, approximately 2 km in diameter. It was discovered in 1973 by American astronomer Charles Kowal at Palomar Observatory. This asteroid, named after King Midas from Greek mythology, follows a highly elliptical orbit close to Earth's path.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -177,7 +181,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 0.1483125, 
         period: 1018.35, 
-        inclination: 6.67, 
+        inclination: 6.67,
+        desc: "Cuno, an eccentric NEO and PHA from the Apollo group, is a rare-type asteroid measuring about 4 km in diameter. It was discovered by German astronomer Cuno Hoffmeister in 1959 at Boyden Observatory in South Africa, and the asteroid was later named in his honor.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -190,6 +195,7 @@ const nearEarthObjects = {
         rotationPeriod: 0.16220833, 
         period: 1003.75, 
         inclination: 5.3, 
+        desc: "Zephyr is a stony near-Earth object and PHA of the Apollo group, approximately 2 km in diameter. It was discovered in 1999 by the Lowell Observatory Near-Earth Object Search (LONEOS) team. The asteroid is named after Zephyrus, the Greek god of the west wind.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -201,7 +207,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 0.1151875, 
         period: 187.975, 
-        inclination: 38.88, 
+        inclination: 38.88,
+        desc: "Moshup is a binary asteroid classified as a near-Earth object and potentially hazardous asteroid in the Aten group. It was discovered in 1999 by the Lincoln Near-Earth Asteroid Research (LINEAR) team and features a primary object about 1.3 km in diameter, along with a companion moonlet.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -214,6 +221,7 @@ const nearEarthObjects = {
         rotationPeriod: 0, 
         period: 359.16, 
         inclination: 9.92, 
+        desc: "Khufu, an NEO and PHA in the Aten group, is about 0.7 km in diameter. It was discovered by R. Scott Dunbar and Maria A. Barucci at Palomar Observatory in 1984. The asteroid, which crosses Earth’s orbit, was named after the ancient Egyptian pharaoh Khufu.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
@@ -225,7 +233,8 @@ const nearEarthObjects = {
         color: 0xa9a9a9, 
         rotationPeriod: 1.2733333, 
         period: 323.39, 
-        inclination: 3.34, 
+        inclination: 3.34,
+        desc: "Apophis is a near-Earth asteroid and potentially hazardous asteroid, estimated to be about 335 meters in diameter. Discovered in 2004 by astronomers at the Kitt Peak National Observatory, Apophis was initially considered one of the most hazardous objects but has since been determined to pose no risk of Earth impact for at least the next century.",
         center: new THREE.Vector3(0, 0, 0),
         texturePath: null 
     },
