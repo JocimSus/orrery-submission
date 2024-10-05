@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  overflow:hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  position:absolute;
+  display:flex;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.navbar {
+  color:white;
+  width:100vw;
+  height:10vh;
+  background: radial-gradient(ellipse at top, #5a5a5a3f, transparent),
+            radial-gradient(ellipse at bottom, #00000000, transparent);
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  pointer-events:all;
+}
+
+.navbutton {
+  color: rgba(255, 255, 255, 0.262);
+  font-family: monospace;
+  font-size:15px;
+  background-color: rgb(0,0,0,0);
+  border: none;
+  width:auto;
+  height:auto;
+  transition: all 0.5s;
+}
+
+.navbutton:hover {
+  color: white;
+  font-size:20px;
+  background-color: rgb(0,0,0,0);
+  border: none;
+  width:auto;
+  height:auto;
+  border-bottom: solid rgb(0, 157, 255) 2px;
+}
+
+.PlanetLabels {
+  transition: opacity 0.5s;
+}
+
+@font-face {
+  font-family: SpaceMono;
+  src: url(SpaceMono-Regular.ttf);
+}
+
+html, body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-family: SpaceMono, 'Times New Roman', Times, serif;
+}
+
+.SLIDA {
+  width: 100vw; 
+  height: 12.5vh;
+  position: fixed;
+  right: 0;
+  bottom: 0; 
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  pointer-events: all;
+}
+
+.slider-value {
+  position: absolute;
+  top: -30px; /* Position the text above the slider */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the text above the thumb */
+  color: #ddd;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.slider {
+  width: 90vw; 
+  margin: 0;
+  position:fixed;
+  bottom: 3vw;
+  padding: 0;
+  -webkit-appearance: none; 
+  appearance: none;
+  height: 1px; 
+  background: #000000; 
+  outline: none; 
+  opacity: 0.9; 
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  margin-top: -7px;
+  display: flex;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  background: white; /* Thumb color */
+  border: 1px solid black; /* Black outline */
+  cursor: pointer; /* Change the cursor on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* shadow */
+  transition: background-color 0.3s; /* transition */
+}
+
+/* Thumb hover effect */
+.slider::-webkit-slider-thumb:hover {
+  background-color: #2a0eff; /* Slight color change on hover  */
+}
+
+.slider::-moz-range-thumb { /* this some fire fox shit dont mind it */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.slider::-moz-range-track {
+  height: 5px;
+  background: #2a0eff;
+  border-radius: 5px;
+}
+.slider::-webkit-slider-runnable-track {
+  background: #ddd; 
+  border-radius: 5px;
+  height: 5px; 
+}
