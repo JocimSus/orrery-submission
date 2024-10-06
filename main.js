@@ -317,6 +317,14 @@ document.addEventListener('mousemove', onHover) //trigger a function upon the mo
 document.addEventListener('mousedown', onClick)
 
 const info_bar = document.querySelector(".information")
+const name = document.getElementById("planet-name")
+const size = document.getElementById("size")
+const sma = document.getElementById("sma")
+const oe = document.getElementById("oe")
+const rp = document.getElementById("rp")
+const period = document.getElementById("period")
+const inclination = document.getElementById("inclination")
+const desc = document.getElementById("desc")
 
 function onClick(event) {
   if (event.button === 2) {
@@ -336,14 +344,22 @@ function onClick(event) {
       const parent = savedObject.parent.name
       let description = null
       if (parent in planetParams) {
-        description = planetParams[parent].desc
+        description = planetParams[parent]
         console.log(parent) // name
         console.log(description) // desc
       } else if (parent in satelliteParams) {
-        description = satelliteParams[parent].desc
+        description = satelliteParams[parent]
       } else if (parent in nearEarthObjects) {
-        description = nearEarthObjects[parent].desc
+        description = nearEarthObjects[parent]
       }
+      name.innerText = description.tag
+      size.innerText = description.size
+      sma.innerText = description.smA
+      oe.innerText = description.oE
+      rp.innerText = description.rotationPeriod
+      period.innerText = description.period
+      inclination.innerText = description.inclination
+      desc.innerText = description.desc
     }
     else {
       return

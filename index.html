@@ -52,7 +52,7 @@
                 <div class="category-toggle on" id="label-orbits" state="on" onclick="toggleNEOOrbits()">On</div>
               </div>
               <div class="category orbits">
-                <div class="category-title">Satellite Orbits : </div>
+                <div class="category-title">Satellite Orbits: </div>
                 <div class="category-toggle on" id="label-orbits" state="on" onclick="toggleSatelliteOrbits()">On</div>
               </div>
           </div>
@@ -65,21 +65,24 @@
       <div class="planet-name" id="planet-name"></div>
       <div class="planet-info">
         <div class="info-title">Size</div>
-        <div class="info-facts" id="size"></div>
+        <div class="info-facts"><span id="size"></span> KM</div>
         <div class="info-title">Semi Major Axis (SMA)</div>
-        <div class="info-facts" id="sma"></div>
+        <div class="info-facts"><span id="sma"></span> AU</div>
         <div class="info-title">Orbital Eccentricity</div>
-        <div class="info-facts" id="oe"></div>
+        <div class="info-facts"><span id="oe"></span> </div>
         <div class="info-title">Rotation Period</div>
-        <div class="info-facts" id="rp"></div>
+        <div class="info-facts"><span id="rp"></span> Days</div>
         <div class="info-title">Period</div>
-        <div class="info-facts" id="period"></div>
+        <div class="info-facts"><span id="period"></span> Days</div>
         <div class="info-title">Inclination</div>
-        <div class="info-facts" id="Inclination"></div>
+        <div class="info-facts"><span id="inclination"></span> Degrees</div>
+        <div class="info-title">Description</div>
+        <div class="info-facts" id="desc"></div>
       </div>
   </div>
     <canvas id="orrery"></canvas>
-    <script type="module" src="sidebar.js" defer></script>
+    <script src="sidebar.js" defer></script>
+    <script type="module" src="objectGet.js"></script>
     <script type="module" src="script.js"></script>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/OrbitToggle.js"></script>

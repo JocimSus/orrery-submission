@@ -133,17 +133,17 @@ html, body {
     font-size: 20px;
 }
 
-.category{
-    width: 100%;
-    display: flex;
-    padding-left: 10px;
-    justify-content: space-around;
-}
-
 .categories{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.category{
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+  justify-content: space-between;
 }
 
 .category-toggle{
