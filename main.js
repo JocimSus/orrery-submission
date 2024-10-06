@@ -341,25 +341,55 @@ function onClick(event) {
       savedObject.material.color  = color
       info_bar.classList.add("visible")
 
+      const distanceScaleFactor = 1000
+      const sizeScaleFactor = 1/100
+      const nEOScale = 4
+
       const parent = savedObject.parent.name
       let description = null
-      if (parent in planetParams) {
+      if (savedObject.name == "sun") {
+        name.innerText = "Sun"
+        size.innerText = sunSize * 10 / sizeScaleFactor
+        sma.innerText = null
+        oe.innerText = null
+        rp.innerText = "24.47"
+        period.innerText = null
+        inclination.innerText = null
+        desc.innerText = null
+      } else if (parent in planetParams) {
         description = planetParams[parent]
-        console.log(parent) // name
-        console.log(description) // desc
+
+        name.innerText = description.tag
+        size.innerText = description.size / sizeScaleFactor
+        sma.innerText = description.smA / distanceScaleFactor
+        oe.innerText = description.oE
+        rp.innerText = description.rotationPeriod
+        period.innerText = description.period
+        inclination.innerText = description.inclination
+        desc.innerText = description.desc
       } else if (parent in satelliteParams) {
         description = satelliteParams[parent]
+
+        name.innerText = description.tag
+        size.innerText = description.size / sizeScaleFactor
+        sma.innerText = description.smA / distanceScaleFactor
+        oe.innerText = description.oE
+        rp.innerText = description.rotationPeriod
+        period.innerText = description.period
+        inclination.innerText = description.inclination
+        desc.innerText = description.desc
       } else if (parent in nearEarthObjects) {
         description = nearEarthObjects[parent]
+
+        name.innerText = description.tag
+        size.innerText = description.size / nEOScale
+        sma.innerText = description.smA / distanceScaleFactor
+        oe.innerText = description.oE
+        rp.innerText = description.rotationPeriod
+        period.innerText = description.period
+        inclination.innerText = description.inclination
+        desc.innerText = description.desc
       }
-      name.innerText = description.tag
-      size.innerText = description.size
-      sma.innerText = description.smA
-      oe.innerText = description.oE
-      rp.innerText = description.rotationPeriod
-      period.innerText = description.period
-      inclination.innerText = description.inclination
-      desc.innerText = description.desc
     }
     else {
       return
