@@ -25,8 +25,8 @@ const resetCamera = () => {
 }
 
 const textureLoader = new THREE.TextureLoader()
-const ambient_light = new THREE.AmbientLight(0x222222)
-const sunlight = new THREE.PointLight(0xffffff, 1000000, 0, 2)
+const ambient_light = new THREE.AmbientLight(0x444444)
+const sunlight = new THREE.PointLight(0xffffff, 2000000, 4500000, 1)
 
 scene.add(ambient_light)
 scene.add(sunlight)
