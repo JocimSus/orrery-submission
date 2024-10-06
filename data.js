@@ -114,7 +114,8 @@ const satelliteParams = {
         rotationPeriod: 10, 
         period: 30, 
         inclination: 5.1, 
-        texturePath: "/textures/8k_moon.jpg"  
+        texturePath: "/textures/8k_moon.jpg",
+        desc: "The Moon is Earth's only natural satellite and one of the most well-known celestial bodies. Its surface is rocky and covered with craters, formed by ancient impacts. The Moon’s gravitational pull affects tides on Earth, and its phases have been observed and studied for thousands of years."
     },
 }
 
