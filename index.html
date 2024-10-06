@@ -21,14 +21,10 @@
       </div>
     </div>
     <div class="container">
-      <div class="navbar">
-        <button class="navbutton">User-friendly model</button>
-        <button class="navbutton" onclick="EnableText()">Object Labels</button>
-        <button class="navbutton">User-friendly model</button>
-      </div>
       <div class="SLIDA">
-        <div class="slider-value" id="sliderValue">5000</div>
-        <input type="range" id="SLIDA" class="slider" min="0" max="100000" value="5000" step="1" oninput="updateValue(this.value)">
+        <input type="number" id="sliderValue" min="0" step="0.1" value="1" onchange="changeSpeed(this.value)" style="max-width: 60px;">
+        <label for="sliderValue" style="color:white; margin-left:10px"> days / second</label>
+        <input type="range" id="SLIDA" class="slider" min="0" max="3650" value="1" step="0.1" oninput="changeSpeed(this.value)">
         <output for="mySlider" id="volumeOutput"></output>
       </div>
     </div>
@@ -45,11 +41,19 @@
           <div class="categories feature">
               <div class="category label">
                   <div class="category-title">Labels : </div>
-                  <div class="category-toggle on" id="label-toggle" state="on">On</div>
+                  <div class="category-toggle on" id="label-toggle" state="on" onclick="EnableText()">On</div>
               </div>
               <div class="category orbits">
-                  <div class="category-title">Orbits : </div>
-                  <div class="category-toggle on" id="label-orbits" state="on">On</div>
+                  <div class="category-title">Planet Orbits : </div>
+                  <div class="category-toggle on" id="label-orbits" state="on" onclick="togglePlanetOrbits()">On</div>
+              </div>
+              <div class="category orbits">
+                <div class="category-title">NEO Orbits : </div>
+                <div class="category-toggle on" id="label-orbits" state="on" onclick="toggleNEOOrbits()">On</div>
+              </div>
+              <div class="category orbits">
+                <div class="category-title">Satellite Orbits : </div>
+                <div class="category-toggle on" id="label-orbits" state="on" onclick="toggleSatelliteOrbits()">On</div>
               </div>
           </div>
       </div>
