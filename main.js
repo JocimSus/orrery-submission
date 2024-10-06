@@ -36,10 +36,10 @@ sunlight.castShadow = true
 resetCamera()
 
 // Dev
-const gridHelper = new THREE.GridHelper(100000, 50)
-const axesHelper = new THREE.AxesHelper(50000)
+//const gridHelper = new THREE.GridHelper(100000, 50)
+//const axesHelper = new THREE.AxesHelper(50000)
 
-scene.add(gridHelper, axesHelper)
+//scene.add(gridHelper, axesHelper)
 
 // Kepler's equation solver functions
 function KeplerStart3(e, M) {
