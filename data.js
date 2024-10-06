@@ -218,7 +218,7 @@ const nearEarthObjects = {
         texturePath: null 
     },
     "66391 Moshup": { 
-        tag:"12923 Zephyr", 
+        tag:"66391s Moshup", 
         size: 1.317 * nEOScale, 
         smA: -0.6424 * distanceScaleFactor, 
         oE: 0.6884, 
