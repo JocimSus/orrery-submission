@@ -315,6 +315,19 @@ var selected  = false
 
 document.addEventListener('mousemove', onHover) //trigger a function upon the mouse being clicked
 document.addEventListener('mousedown', onClick)
+document.getElementById('close-info').addEventListener('click', function() {
+    const infoPanel = document.querySelector('.information');
+    infoPanel.classList.remove('visible');
+    // Reset any selected object highlighting
+    if (savedObject) {
+        savedObject.material.color = savedColor;
+        savedObject = null;
+        savedColor = null;
+    }
+    selected = false;
+    // Reset camera position if needed
+    resetCamera();
+});
 
 const info_bar = document.querySelector(".information")
 const name = document.getElementById("planet-name")
