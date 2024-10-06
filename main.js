@@ -120,6 +120,14 @@ const sun = createPlanet(sunSize, "/textures/8k_sun.jpg")
 sun.material.color = new THREE.Color(255,255,150)
 sun.name = "sun"
 
+const Textholder = document.createElement('p')
+Textholder.name = "Sun";
+Textholder.textContent = "Sun";
+Textholder.style.color = 'white';
+Textholder.style.fontFamily = 'Poppins', 'monospace';
+Textholder.style.fontSize = '12px';
+Textholder.className = 'PlanetLabels';
+
 // Create planets, textsand their orbit lines
 const planets = {}
 const orbitLines = {}
@@ -136,6 +144,10 @@ document.body.appendChild(RenderField.domElement)
 //Creating the container where the html objects would be contained
 
 const labels = new THREE.Group()
+
+const sunLabel = new CSS2DObject(Textholder);
+names[sun] = sunLabel;
+labels.add(sunLabel);
 
 for (const planet in planetParams) {
   const params = planetParams[planet]
@@ -406,17 +418,20 @@ function animate() {
     window.addEventListener('keydown', function (e) {
       if (e.key == "Escape") {
         selected = false
+        info_bar.classList.remove("visible")
         resetCamera()          
       }
     }, false);
   }
   
   // Update each planet's and their text position
+  names[sun].position.set(0, -(sunSize + 15), 0)
+
   for (const planet in planetParams) {
     const params = planetParams[planet]
     const position = propagate(totalElapsedTime, params.smA, params.oE, params.period, params.inclination)
     planets[planet].position.set(position.x, position.y, position.z)
-    names[planet].position.set(position.x, (position.y-15), position.z)
+    names[planet].position.set(position.x, (position.y - (params.size + 15)), position.z)
     const rotationSpeed = (2 * Math.PI) / params.rotationPeriod
     planets[planet].rotation.y += rotationSpeed * delta * timeScale
   }
@@ -426,7 +441,7 @@ function animate() {
     const position = propagate(totalElapsedTime, params.smA, params.oE, params.period, params.inclination)
     satellites[satellite].position.set(position.x + planets[params.parent].position.x, position.y + planets[params.parent].position.y, position.z + planets[params.parent].position.z)
     satellitesOrbitLines[satellite].position.set(planets[params.parent].position.x, planets[params.parent].position.y, planets[params.parent].position.z)
-    names[satellite].position.set(position.x + planets[params.parent].position.x, (position.y + planets[params.parent].position.y - 15), position.z + planets[params.parent].position.z)
+    names[satellite].position.set(position.x + planets[params.parent].position.x, (position.y + planets[params.parent].position.y - (params.size + 15)), position.z + planets[params.parent].position.z)
     if (params.rotationSpeed) {
       const rotationSpeed = (2 * Math.PI) / params.rotationPeriod
       satellites[satellite].rotation.y += rotationSpeed * delta * timeScale
@@ -437,7 +452,7 @@ function animate() {
     const params = nearEarthObjects[nEO]
     const position = propagate(totalElapsedTime, params.smA, params.oE, params.period, params.inclination, params.center)
     nEOs[nEO].position.set(position.x, position.y, position.z)
-    names[nEO].position.set(position.x, (position.y-15), position.z);
+    names[nEO].position.set(position.x, (position.y - (params.size + 15)), position.z);
     if (params.rotationPeriod){
       const rotationSpeed = (2 * Math.PI) / params.rotationPeriod
       nEOs[nEO].rotation.y += rotationSpeed * delta * timeScale
