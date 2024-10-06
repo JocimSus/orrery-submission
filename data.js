@@ -1,7 +1,7 @@
 import * as THREE from "three"
 
 const distanceScaleFactor = 1000
-const sizeScaleFactor = 1/100
+const sizeScaleFactor = 1/300
 
 // in degrees
 const planetParams = {
@@ -141,7 +141,7 @@ const nearEarthObjects = {
     "53319": { 
         tag:"53319", 
         size: 7 * nEOScale, 
-        smA: -2.724 * distanceScaleFactor, 
+        smA: 2.724 * distanceScaleFactor, 
         oE: 0.6414, 
         color: 0xa9a9a9, 
         rotationPeriod: 5.9875, 
@@ -189,7 +189,7 @@ const nearEarthObjects = {
     "4183 Cuno": { 
         tag:"4183 Cuno", 
         size: 3.651 * nEOScale, 
-        smA: -1.981 * distanceScaleFactor, 
+        smA: 1.981 * distanceScaleFactor, 
         oE: 0.6361, 
         color: 0xa9a9a9, 
         rotationPeriod: 0.1483125, 
@@ -221,7 +221,7 @@ const nearEarthObjects = {
     "66391 Moshup": { 
         tag:"66391s Moshup", 
         size: 1.317 * nEOScale, 
-        smA: -0.6424 * distanceScaleFactor, 
+        smA: 0.6424 * distanceScaleFactor, 
         oE: 0.6884, 
         color: 0xa9a9a9, 
         rotationPeriod: 0.1151875, 
@@ -253,7 +253,7 @@ const nearEarthObjects = {
     "99942 Apophis": { 
         tag:"99942 Apophis", 
         size: 0.34 * nEOScale, 
-        smA: -0.9224 * distanceScaleFactor, 
+        smA: 0.9224 * distanceScaleFactor, 
         oE: 0.1911, 
         color: 0xa9a9a9, 
         rotationPeriod: 1.2733333, 
