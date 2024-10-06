@@ -5,6 +5,7 @@ import * as THREE from "three"
 import CameraControls from "camera-controls"
 import { CSS2DObject } from "three/examples/jsm/Addons.js";
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
+import { pass } from "three/webgpu";
 
 // Init
 const scene = new THREE.Scene()
@@ -331,6 +332,18 @@ function onClick(event) {
       var color = new THREE.Color(1, 1, 1)
       savedObject.material.color  = color
       info_bar.classList.add("visible")
+
+      const parent = savedObject.parent.name
+      let description = null
+      if (parent in planetParams) {
+        description = planetParams[parent].desc
+        console.log(parent) // name
+        console.log(description) // desc
+      } else if (parent in satelliteParams) {
+        description = satelliteParams[parent].desc
+      } else if (parent in nearEarthObjects) {
+        description = nearEarthObjects[parent].desc
+      }
     }
     else {
       return
