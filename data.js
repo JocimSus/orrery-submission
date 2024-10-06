@@ -1,7 +1,7 @@
 import * as THREE from "three"
 
 const distanceScaleFactor = 1000
-const sizeScaleFactor = 1/300
+const sizeScaleFactor = 1/250
 
 // in degrees
 const planetParams = {
@@ -119,7 +119,7 @@ const satelliteParams = {
     },
 }
 
-const nEOScale = 4
+const nEOScale = 2.5
 
 const nearEarthObjects = {
     "162173 Ryugu": { 
