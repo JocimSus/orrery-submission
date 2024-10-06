@@ -1,11 +1,11 @@
-const { defineConfig } = require('vite')
+import { defineConfig } from 'vite'
 
-module.exports = defineConfig({
+export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-            main: './index.html',
-            learn_page: './learn-page.html',
+                main: './index.html',
+                learn_page: './learn-page.html',
             }
         }
     }
