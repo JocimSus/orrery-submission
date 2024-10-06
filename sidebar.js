@@ -29,3 +29,5 @@ function slide() {
     
     side_open = !side_open; 
 }
+
+window.slide = slide
