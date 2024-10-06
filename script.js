@@ -38,6 +38,7 @@ window.EnableText = EnableText
 
 const startBtn = document.querySelector(".startbtn")
 const containerIntro = document.querySelector(".container-intro")
+
 startBtn.addEventListener("click", ()=>{
   containerIntro.classList.add("fade-out");
   setTimeout(() => {
